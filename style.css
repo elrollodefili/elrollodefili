@@ -85,8 +85,8 @@ h1,h2,h3,h4{
 }
 .site-header.solid{ background:rgba(15,17,14,.88); backdrop-filter:blur(10px); }
 .brand{ display:flex; align-items:center; gap:12px; color:#fff; }
-.brand-logo{ height:38px; width:auto; display:block; }
-.brand .name{ font-family:"Playfair Display",serif; font-size:20px; letter-spacing:.02em; line-height:1.15; }
+.brand-logo{ height:40px; width:auto; display:block; }
+.brand .name{ font-family:"Playfair Display",serif; font-size:24px; letter-spacing:.02em; line-height:1.15; }
 .brand .sub{ font-family:"Inter",sans-serif; font-size:10px; letter-spacing:.22em; opacity:.75; }
 
 .main-nav{ display:none; }
