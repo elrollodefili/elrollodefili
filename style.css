@@ -86,7 +86,7 @@ h1,h2,h3,h4{
 .site-header.solid{ background:rgba(15,17,14,.88); backdrop-filter:blur(10px); }
 .brand{ display:flex; align-items:center; gap:12px; color:#fff; }
 .brand-logo{ height:38px; width:auto; display:block; }
-.brand .name{ font-family:"Playfair Display",serif; font-size:30px; letter-spacing:.02em; line-height:1.15; }
+.brand .name{ font-family:"Playfair Display",serif; font-size:20px; letter-spacing:.02em; line-height:1.15; }
 .brand .sub{ font-family:"Inter",sans-serif; font-size:10px; letter-spacing:.22em; opacity:.75; }
 
 .main-nav{ display:none; }
@@ -128,7 +128,7 @@ h1,h2,h3,h4{
     letter-spacing:.18em;
     text-transform:uppercase;
     color:#F5E3B4;
-    white-space:nowrap;
+    white-space:normal;
     text-shadow:0 2px 6px rgba(0,0,0,.55);
 }
 .hero-content h1{ font-size:clamp(38px,7vw,74px); font-weight:800; line-height:1.02; color:#fff; margin-top:14px; }
