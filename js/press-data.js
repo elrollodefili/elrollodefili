@@ -1,6 +1,11 @@
 /* PRENSA Y MEDIOS — jerarquía por nivel */
 const PRESS_DATA = {
   nivel1: [
+    {
+    source:"Caracol Radio",
+    text:"En 'Mi Banda Sonora', Filiberto Pinzón recorre su vida y su trayectoria como fotógrafo a través de las canciones que marcaron su historia.",
+    url:"https://caracol.com.co/programa/2020/07/24/a_vivir_que_son_dos_dias/1595549630_786511.html"
+},
     { source:"Revista Semana", text:"Un perfil sobre las aventuras de un fotógrafo que ha recorrido más de mil pueblos de Colombia documentando su gente y sus paisajes.", url:"https://www.semana.com/mejor-colombia/articulo/el-rollo-de-fili-las-aventuras-de-un-fotografo-que-ha-viajado-por-mas-de-1000-pueblos-de-colombia/202534/" },
     { source:"El Tiempo", text:"Un repaso por su carrera de más de tres décadas en la Casa Editorial El Tiempo y el nacimiento de El Rollo de Fili.", url:"https://www.eltiempo.com/archivo/documento/CMS-15290779" },
     { source:"El Tiempo — Cultura", text:"El lanzamiento de su libro más reciente, resultado de años de trabajo documental por el país.", url:"https://www.eltiempo.com/cultura/musica-y-libros/nuevo-libro-del-reportero-grafico-filiberto-pinzon-308008" },
