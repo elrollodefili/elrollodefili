@@ -161,8 +161,15 @@ h1,h2,h3,h4{
 }
 .hero-content h1{ font-size:clamp(38px,7vw,74px); font-weight:800; line-height:1.02; color:#fff; margin-top:14px; }
 .hero-tagline{
-  font-family:"Cormorant Garamond",serif; font-style:italic;
-  font-size:clamp(19px,2.3vw,27px); margin-top:16px; color:rgba(255,255,255,.92);
+  font-family:"Cormorant Garamond",serif;
+  font-style:italic;
+  font-size:clamp(19px,2.3vw,27px);
+  margin-top:16px;
+
+  color:#ffffff;
+
+  text-shadow:
+      0 2px 8px rgba(0,0,0,.55);
 }
 .hero-cta-line{
 
