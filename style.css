@@ -491,15 +491,16 @@ h1,h2,h3,h4{
     .contact::before{
 
         width:100%;
-        height:100%;
+        height:52%;
 
         left:0;
-        bottom:0;
+        top:0;
+        bottom:auto;
 
-        background-size:78% auto;
+        background-size:72% auto;
         background-position:left bottom;
 
-        opacity:.09;
+        opacity:.10;
     }
 
 }
