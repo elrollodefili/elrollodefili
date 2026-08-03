@@ -118,10 +118,25 @@ h1,h2,h3,h4{
   color:#fff;
 }
 .hero::before{
-  content:""; position:absolute; inset:0;
-  background:linear-gradient(0deg, rgba(6,8,6,.72) 5%, rgba(6,8,6,.1) 55%, rgba(6,8,6,.5) 100%);
+  content:"";
+  position:absolute;
+  inset:0;
+
+  background:linear-gradient(
+      to top,
+      rgba(6,8,6,.88) 0%,
+      rgba(6,8,6,.72) 22%,
+      rgba(6,8,6,.40) 38%,
+      rgba(6,8,6,.10) 58%,
+      rgba(6,8,6,.00) 78%
+  );
 }
-.hero-content{ position:relative; z-index:2; padding:0 32px 74px; max-width:860px; }
+.hero-content{
+    position:relative;
+    z-index:2;
+    padding:0 32px 74px;
+    max-width:920px;
+}
 .hero-eyebrow{
     display:flex;
     flex-direction:column;
@@ -150,9 +165,23 @@ h1,h2,h3,h4{
   font-size:clamp(19px,2.3vw,27px); margin-top:16px; color:rgba(255,255,255,.92);
 }
 .hero-cta-line{
-  font-family:"Cormorant Garamond",serif; font-style:italic;
-  font-size:clamp(15px,1.7vw,18px); color:var(--gold-soft);
-  margin-top:14px; max-width:560px; line-height:1.55;
+
+    font-family:"Cormorant Garamond",serif;
+    font-style:italic;
+
+    font-size:clamp(17px,2vw,21px);
+
+    color:#F4DEAA;
+
+    margin-top:18px;
+
+    max-width:620px;
+
+    line-height:1.65;
+
+    text-shadow:
+        0 2px 8px rgba(0,0,0,.60);
+
 }
 .hero-actions{ display:flex; flex-wrap:wrap; gap:14px; margin-top:32px; }
 .btn{
@@ -431,16 +460,49 @@ h1,h2,h3,h4{
 /* ---------- CONTACTO ---------- */
 .contact{ position:relative; overflow:hidden; background-color:var(--paper); padding:100px 0; }
 .contact::before{
-  content:""; position:absolute; right:-4%; bottom:-6%; width:42%; max-width:480px;
-  aspect-ratio:3/4;
+
+  content:"";
+  position:absolute;
+
+  left:0;
+  bottom:0;
+
+  width:42%;
+  max-width:520px;
+  height:100%;
+
   background-image:url("images/maestro-fili-estudio.jpg");
-  background-size:contain; background-repeat:no-repeat; background-position:bottom right;
-  opacity:.1; pointer-events:none; z-index:0;
-  -webkit-mask-image:linear-gradient(to top, black 55%, transparent 100%);
-  mask-image:linear-gradient(to top, black 55%, transparent 100%);
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:left bottom;
+
+  opacity:.12;
+
+  pointer-events:none;
+  z-index:0;
+
+  -webkit-mask-image:linear-gradient(to right, black 72%, transparent 100%);
+  mask-image:linear-gradient(to right, black 72%, transparent 100%);
 }
 .contact-grid{ position:relative; z-index:1; display:grid; grid-template-columns:1fr; gap:50px; }
 @media(min-width:900px){ .contact-grid{ grid-template-columns:0.95fr 1.05fr; } }
+@media(max-width:900px){
+
+    .contact::before{
+
+        width:100%;
+        height:100%;
+
+        left:0;
+        bottom:0;
+
+        background-size:78% auto;
+        background-position:left bottom;
+
+        opacity:.09;
+    }
+
+}
 .contact h2{ font-size:clamp(28px,4vw,42px); margin-top:10px; }
 .contact p.lead{ margin-top:16px; color:#3f3b34; max-width:440px; }
 .contact-details{
@@ -469,7 +531,11 @@ h1,h2,h3,h4{
 footer.site-footer{
   position:relative; color:#e7ede9;
   background-color:var(--forest-deep);
-  background-image:linear-gradient(rgba(9,15,11,.92),rgba(9,15,11,.94)), url("images/port-territorio-abierto.jpg");
+  background-image:
+linear-gradient(
+rgba(9,15,11,.74),
+rgba(9,15,11,.78)),
+url("images/port-territorio-abierto.jpg");
   background-size:cover; background-position:center;
   padding:90px 0 30px;
 }
